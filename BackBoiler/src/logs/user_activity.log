@@ -1,0 +1,352 @@
+INFO 2024-09-06 11:45:46,966 Watching for file changes with StatReloader
+INFO 2024-09-06 11:45:51,176 User 'Anonymous' accessed GET /
+WARNING 2024-09-06 11:45:51,320 Not Found: /
+WARNING 2024-09-06 11:45:51,321 "GET / HTTP/1.1" 404 2527
+INFO 2024-09-06 11:45:57,543 User 'Anonymous' accessed GET /swagger/
+INFO 2024-09-06 11:45:57,563 "GET /swagger/ HTTP/1.1" 200 4654
+INFO 2024-09-06 11:45:57,614 User 'Anonymous' accessed GET /swagger-yaml/
+INFO 2024-09-06 11:45:57,641 "GET /swagger-yaml/ HTTP/1.1" 200 7048
+INFO 2024-09-06 11:46:25,410 User 'Anonymous' accessed POST /User/GetUserToken/
+INFO 2024-09-06 11:46:25,420 "POST /User/GetUserToken/ HTTP/1.1" 200 59
+INFO 2024-09-06 11:46:26,125 User 'Anonymous' accessed POST /User/GetUserToken/
+INFO 2024-09-06 11:46:26,128 "POST /User/GetUserToken/ HTTP/1.1" 200 59
+INFO 2024-09-06 12:42:47,391 Watching for file changes with StatReloader
+INFO 2024-09-06 12:42:50,809 User 'Anonymous' accessed GET /
+WARNING 2024-09-06 12:42:50,828 Not Found: /
+WARNING 2024-09-06 12:42:50,828 "GET / HTTP/1.1" 404 2632
+INFO 2024-09-06 12:43:09,556 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 12:43:09,569 "GET /logs/filter/ HTTP/1.1" 200 986
+INFO 2024-09-06 12:43:23,201 User 'Anonymous' accessed POST /logs/filter/
+ERROR 2024-09-06 12:43:23,430 Internal Server Error: /logs/filter/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py", line 71, in filter_logs
+    logs = filter_log_file(LOG_FILE_PATH, start_date, end_date, user)
+  File "C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py", line 100, in filter_log_file
+    log_date = datetime.strptime(log_date_str, "%Y-%m-%d")
+  File "E:\araconda\envs\Django\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "E:\araconda\envs\Django\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'INFO' does not match format '%Y-%m-%d'
+ERROR 2024-09-06 12:43:23,432 "POST /logs/filter/ HTTP/1.1" 500 86760
+INFO 2024-09-06 12:50:44,861 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 12:50:45,438 Watching for file changes with StatReloader
+INFO 2024-09-06 12:50:53,451 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 12:50:54,016 Watching for file changes with StatReloader
+INFO 2024-09-06 12:51:16,471 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:16,493 "POST /logs/filter/ HTTP/1.1" 200 612
+INFO 2024-09-06 12:51:21,100 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:21,110 "POST /logs/filter/ HTTP/1.1" 200 612
+INFO 2024-09-06 12:51:22,076 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:22,085 "POST /logs/filter/ HTTP/1.1" 200 612
+INFO 2024-09-06 12:51:22,501 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:22,510 "POST /logs/filter/ HTTP/1.1" 200 612
+INFO 2024-09-06 12:51:29,572 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:29,582 "POST /logs/filter/ HTTP/1.1" 200 592
+INFO 2024-09-06 12:51:34,516 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:34,526 "POST /logs/filter/ HTTP/1.1" 200 612
+INFO 2024-09-06 12:51:34,930 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:34,938 "POST /logs/filter/ HTTP/1.1" 200 612
+INFO 2024-09-06 12:51:40,301 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:40,310 "POST /logs/filter/ HTTP/1.1" 200 608
+INFO 2024-09-06 12:51:40,699 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:51:40,707 "POST /logs/filter/ HTTP/1.1" 200 608
+INFO 2024-09-06 12:55:39,461 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 12:55:40,068 Watching for file changes with StatReloader
+INFO 2024-09-06 12:57:25,440 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 12:57:26,036 Watching for file changes with StatReloader
+INFO 2024-09-06 12:57:32,626 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:57:32,648 "POST /logs/filter/ HTTP/1.1" 200 912
+INFO 2024-09-06 12:57:41,020 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:57:41,033 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 12:57:41,682 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:57:41,695 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 12:57:42,110 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 12:57:42,120 "POST /logs/filter/ HTTP/1.1" 200 0
+INFO 2024-09-06 13:04:08,875 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:04:09,488 Watching for file changes with StatReloader
+INFO 2024-09-06 13:04:14,052 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:04:14,070 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:04:16,704 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:04:16,714 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:06:48,223 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:06:48,786 Watching for file changes with StatReloader
+INFO 2024-09-06 13:06:54,134 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:06:54,158 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:06:55,691 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:06:55,708 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:10:05,160 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:10:05,684 Watching for file changes with StatReloader
+INFO 2024-09-06 13:10:12,324 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:10:12,350 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:10:14,106 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:10:14,122 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:13:04,208 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:13:04,798 Watching for file changes with StatReloader
+INFO 2024-09-06 13:13:09,599 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:13:09,627 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:13:10,853 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:13:10,869 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:14:14,951 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:14:15,531 Watching for file changes with StatReloader
+INFO 2024-09-06 13:14:19,182 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:14:19,220 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:14:20,309 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:14:20,337 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:15:03,319 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:15:03,362 "POST /logs/filter/ HTTP/1.1" 200 8007
+INFO 2024-09-06 13:15:17,361 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:15:17,397 "POST /logs/filter/ HTTP/1.1" 200 6566
+INFO 2024-09-06 13:21:13,768 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:21:14,338 Watching for file changes with StatReloader
+INFO 2024-09-06 13:21:23,335 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:21:23,400 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:21:25,669 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:21:25,702 "POST /logs/filter/ HTTP/1.1" 200 919
+INFO 2024-09-06 13:21:34,898 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:21:34,937 "POST /logs/filter/ HTTP/1.1" 200 8843
+INFO 2024-09-06 13:21:40,849 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:21:40,886 "POST /logs/filter/ HTTP/1.1" 200 7322
+INFO 2024-09-06 13:25:30,387 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:25:30,949 Watching for file changes with StatReloader
+INFO 2024-09-06 13:25:39,244 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:25:39,298 "POST /logs/filter/ HTTP/1.1" 200 9353
+INFO 2024-09-06 13:25:41,457 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:25:41,502 "POST /logs/filter/ HTTP/1.1" 200 9517
+INFO 2024-09-06 13:25:43,154 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:25:43,193 "POST /logs/filter/ HTTP/1.1" 200 7936
+INFO 2024-09-06 13:26:16,686 Watching for file changes with StatReloader
+INFO 2024-09-06 13:26:23,554 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:23,605 "POST /logs/filter/ HTTP/1.1" 200 9919
+INFO 2024-09-06 13:26:25,890 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:25,944 "POST /logs/filter/ HTTP/1.1" 200 10083
+INFO 2024-09-06 13:26:29,140 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:26:29,142 "GET /logs/filter/ HTTP/1.1" 200 896
+INFO 2024-09-06 13:26:31,547 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:31,577 "POST /logs/filter/ HTTP/1.1" 200 896
+INFO 2024-09-06 13:26:37,504 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:37,537 "POST /logs/filter/ HTTP/1.1" 200 916
+INFO 2024-09-06 13:26:40,302 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:40,344 "POST /logs/filter/ HTTP/1.1" 200 916
+INFO 2024-09-06 13:26:40,503 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:40,542 "POST /logs/filter/ HTTP/1.1" 200 916
+INFO 2024-09-06 13:26:40,676 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:40,715 "POST /logs/filter/ HTTP/1.1" 200 916
+INFO 2024-09-06 13:26:40,857 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:40,891 "POST /logs/filter/ HTTP/1.1" 200 916
+INFO 2024-09-06 13:26:42,537 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:42,653 "POST /logs/filter/ HTTP/1.1" 200 11391
+INFO 2024-09-06 13:26:44,227 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:26:44,271 "POST /logs/filter/ HTTP/1.1" 200 9587
+INFO 2024-09-06 13:41:03,368 C:\Users\POUYA\Desktop\BackBoiler\src\logmanager\views.py changed, reloading.
+INFO 2024-09-06 13:41:03,937 Watching for file changes with StatReloader
+INFO 2024-09-06 13:41:18,305 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:41:18,391 "POST /logs/filter/ HTTP/1.1" 200 11902
+INFO 2024-09-06 13:44:58,198 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:44:58,244 "POST /logs/filter/ HTTP/1.1" 200 12201
+WARNING 2024-09-06 13:44:58,265 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+INFO 2024-09-06 13:45:20,948 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 13:45:20,995 "POST /logs/filter/ HTTP/1.1" 200 12462
+WARNING 2024-09-06 13:45:21,007 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+INFO 2024-09-06 13:45:24,652 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:45:24,654 "GET /logs/filter/ HTTP/1.1" 200 1018
+WARNING 2024-09-06 13:45:24,685 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+WARNING 2024-09-06 13:45:28,966 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+INFO 2024-09-06 13:47:43,944 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:47:43,944 "GET /logs/filter/ HTTP/1.1" 200 1018
+WARNING 2024-09-06 13:47:43,958 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+INFO 2024-09-06 13:47:44,446 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:47:44,448 "GET /logs/filter/ HTTP/1.1" 200 1018
+WARNING 2024-09-06 13:47:44,466 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+INFO 2024-09-06 13:47:47,151 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:47:47,154 "GET /logs/filter/ HTTP/1.1" 200 1018
+WARNING 2024-09-06 13:47:47,173 "GET /static/logmanager/style.css HTTP/1.1" 404 1819
+INFO 2024-09-06 13:48:57,969 C:\Users\POUYA\Desktop\BackBoiler\src\app\settings.py changed, reloading.
+INFO 2024-09-06 13:48:58,507 Watching for file changes with StatReloader
+INFO 2024-09-06 13:49:04,104 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:49:04,115 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:49:04,181 "GET /static/logmanager/style.css HTTP/1.1" 200 660
+INFO 2024-09-06 13:49:05,138 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:49:05,139 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:49:05,494 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:49:05,496 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:49:05,679 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:49:05,680 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:49:05,893 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:49:05,898 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:49:06,079 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:49:06,080 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:49:11,027 User 'Anonymous' accessed GET /swagger/
+INFO 2024-09-06 13:49:11,041 "GET /swagger/ HTTP/1.1" 200 4654
+INFO 2024-09-06 13:49:11,114 User 'Anonymous' accessed GET /swagger-yaml/
+INFO 2024-09-06 13:49:11,150 "GET /swagger-yaml/ HTTP/1.1" 200 7048
+INFO 2024-09-06 13:49:12,076 User 'Anonymous' accessed GET /swagger/
+INFO 2024-09-06 13:49:12,078 "GET /swagger/ HTTP/1.1" 200 4654
+INFO 2024-09-06 13:49:12,183 User 'Anonymous' accessed GET /swagger-yaml/
+INFO 2024-09-06 13:49:12,198 "GET /swagger-yaml/ HTTP/1.1" 200 7048
+INFO 2024-09-06 13:50:32,751 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:32,752 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:32,765 "GET /static/logmanager/style.css HTTP/1.1" 304 0
+INFO 2024-09-06 13:50:33,394 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:33,395 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:33,639 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:33,641 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:33,808 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:33,810 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:33,964 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:33,965 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:34,131 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:34,132 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:34,278 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:34,280 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:34,487 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:34,488 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:35,319 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:35,320 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:50:41,830 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:50:41,832 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:03,358 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:03,360 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:03,559 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:03,560 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:03,721 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:03,722 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:03,731 "GET /static/logmanager/style.css HTTP/1.1" 304 0
+INFO 2024-09-06 13:51:03,877 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:03,878 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:04,039 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:04,041 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:16,857 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:16,859 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:17,143 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:17,145 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:17,403 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:17,404 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:51:17,605 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:51:17,607 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:53:42,570 User 'Anonymous' accessed GET /
+WARNING 2024-09-06 13:53:42,581 Not Found: /
+WARNING 2024-09-06 13:53:42,581 "GET / HTTP/1.1" 404 2632
+INFO 2024-09-06 13:53:47,952 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:53:47,953 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:53:47,969 "GET /static/logmanager/style.css HTTP/1.1" 304 0
+INFO 2024-09-06 13:53:55,569 C:\Users\POUYA\Desktop\BackBoiler\src\app\settings.py changed, reloading.
+INFO 2024-09-06 13:53:56,113 Watching for file changes with StatReloader
+INFO 2024-09-06 13:53:59,786 C:\Users\POUYA\Desktop\BackBoiler\src\app\settings.py changed, reloading.
+INFO 2024-09-06 13:54:00,384 Watching for file changes with StatReloader
+INFO 2024-09-06 13:54:02,123 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:54:02,131 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:54:02,541 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:54:02,542 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:54:02,707 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:54:02,708 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:54:02,874 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 13:54:02,875 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 13:54:08,521 C:\Users\POUYA\Desktop\BackBoiler\src\app\settings.py changed, reloading.
+INFO 2024-09-06 13:54:09,099 Watching for file changes with StatReloader
+INFO 2024-09-06 14:16:09,336 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:09,347 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:09,358 "GET /static/logmanager/style.css HTTP/1.1" 304 0
+INFO 2024-09-06 14:16:09,702 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:09,703 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:09,871 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:09,873 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:10,028 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:10,030 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:10,183 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:10,185 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:10,333 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:10,335 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:10,486 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:10,487 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:10,776 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:10,778 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:44,400 Watching for file changes with StatReloader
+INFO 2024-09-06 14:16:49,356 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:49,367 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:50,124 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:50,126 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:50,436 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:50,437 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:50,615 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:50,616 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:50,783 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:50,784 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:51,267 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:51,268 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:53,198 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:53,199 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:53,498 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:53,500 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:53,690 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:53,691 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:53,844 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:53,845 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:54,007 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:54,008 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:54,228 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:54,230 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:54,508 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:54,509 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:54,690 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:54,691 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:54,871 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:54,872 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:55,055 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:55,056 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:16:55,303 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:16:55,304 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:29,384 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:29,386 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:29,931 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:29,933 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:30,166 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:30,167 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:30,351 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:30,352 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:30,518 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:30,519 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:30,702 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:30,704 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:31,150 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:31,151 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:31,703 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:31,704 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:31,967 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:31,968 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:32,149 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:32,150 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:32,348 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:32,349 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:17:40,735 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:17:40,737 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:18:00,687 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:18:00,689 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:18:01,724 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:18:01,791 "POST /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:18:02,526 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:18:02,601 "POST /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:18:10,735 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:18:10,831 "POST /logs/filter/ HTTP/1.1" 200 27256
+INFO 2024-09-06 14:18:14,472 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:18:14,557 "POST /logs/filter/ HTTP/1.1" 200 27421
+INFO 2024-09-06 14:19:07,549 Watching for file changes with StatReloader
+INFO 2024-09-06 14:19:13,755 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:19:13,850 "POST /logs/filter/ HTTP/1.1" 200 27660
+INFO 2024-09-06 14:19:20,249 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-06 14:19:20,250 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-06 14:19:20,384 "GET /static/logmanager/style.css HTTP/1.1" 200 1166
+INFO 2024-09-06 14:19:36,855 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:19:36,925 "POST /logs/filter/ HTTP/1.1" 200 1038
+INFO 2024-09-06 14:19:36,935 "GET /static/logmanager/style.css HTTP/1.1" 304 0
+INFO 2024-09-06 14:19:39,863 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:19:39,941 "POST /logs/filter/ HTTP/1.1" 200 12779
+INFO 2024-09-06 14:19:52,869 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:19:52,959 "POST /logs/filter/ HTTP/1.1" 200 28495
+INFO 2024-09-06 14:19:52,969 "GET /static/logmanager/style.css HTTP/1.1" 304 0
+INFO 2024-09-06 14:20:20,711 User 'Anonymous' accessed POST /logs/filter/
+INFO 2024-09-06 14:20:20,799 "POST /logs/filter/ HTTP/1.1" 200 24701

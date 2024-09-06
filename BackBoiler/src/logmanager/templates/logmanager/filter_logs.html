@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Manager</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'logmanager/style.css' %}">
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" value="{{ start_date }}">
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" value="{{ end_date }}">
+
+        <label for="user">User:</label>
+        <input type="text" id="user" name="user" value="{{ user }}">
+
+        <label for="include_all_users">
+            <input type="checkbox" id="include_all_users" name="include_all_users" {% if include_all_users %}checked{% endif %}>
+            Include logs from all users
+        </label>
+
+        <button type="submit" name="filter">Filter Logs</button>
+        <button type="submit" name="download">Download Logs</button>
+    </form>
+
+    {% if logs %}
+    <h2>Filtered Logs</h2>
+    <pre>{{ logs }}</pre>
+    {% endif %}
+
+</body>
+</html>
