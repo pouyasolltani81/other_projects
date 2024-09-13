@@ -1,7 +1,7 @@
 
 from pathlib import Path
 import os
-
+import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,6 +19,17 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
+# ssl configurations
+if 'runserver' in sys.argv:
+
+    SECURE_SSL_REDIRECT = False  
+    SECURE_HSTS_SECONDS = 0  
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -34,6 +45,7 @@ INSTALLED_APPS = [
     'AuthModel',    
     'TestAppModel',
     'logmanager',
+    'sslserver',
 ]
 
 MIDDLEWARE = [

@@ -350,3 +350,24 @@ INFO 2024-09-06 14:19:52,959 "POST /logs/filter/ HTTP/1.1" 200 28495
 INFO 2024-09-06 14:19:52,969 "GET /static/logmanager/style.css HTTP/1.1" 304 0
 INFO 2024-09-06 14:20:20,711 User 'Anonymous' accessed POST /logs/filter/
 INFO 2024-09-06 14:20:20,799 "POST /logs/filter/ HTTP/1.1" 200 24701
+INFO 2024-09-13 18:46:22,007 Watching for file changes with StatReloader
+INFO 2024-09-13 18:46:28,977 User 'Anonymous' accessed GET /
+WARNING 2024-09-13 18:46:28,990 Not Found: /
+WARNING 2024-09-13 18:46:28,991 "GET / HTTP/1.1" 404 2633
+INFO 2024-09-13 18:46:29,044 User 'Anonymous' accessed GET /favicon.ico
+WARNING 2024-09-13 18:46:29,051 Not Found: /favicon.ico
+WARNING 2024-09-13 18:46:29,051 "GET /favicon.ico HTTP/1.1" 404 2684
+INFO 2024-09-13 18:46:45,976 User 'Anonymous' accessed GET /swagger
+INFO 2024-09-13 18:46:45,981 "GET /swagger HTTP/1.1" 301 0
+INFO 2024-09-13 18:46:45,994 User 'Anonymous' accessed GET /swagger/
+INFO 2024-09-13 18:46:46,004 "GET /swagger/ HTTP/1.1" 200 4654
+INFO 2024-09-13 18:46:46,183 User 'Anonymous' accessed GET /swagger-yaml/
+INFO 2024-09-13 18:46:46,211 "GET /swagger-yaml/ HTTP/1.1" 200 7048
+INFO 2024-09-13 18:47:34,000 User 'Anonymous' accessed GET /logs/filter
+INFO 2024-09-13 18:47:34,009 "GET /logs/filter HTTP/1.1" 301 0
+INFO 2024-09-13 18:47:34,021 User 'Anonymous' accessed GET /logs/filter/
+INFO 2024-09-13 18:47:34,026 "GET /logs/filter/ HTTP/1.1" 200 1018
+INFO 2024-09-13 18:47:34,098 "GET /static/logmanager/style.css HTTP/1.1" 200 1140
+INFO 2024-09-13 18:47:37,579 User 'Anonymous' accessed GET /
+WARNING 2024-09-13 18:47:37,584 Not Found: /
+WARNING 2024-09-13 18:47:37,584 "GET / HTTP/1.1" 404 2633
