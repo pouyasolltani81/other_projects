@@ -13,4 +13,5 @@ urlpatterns = [
     path('User/', include('UserModel.urls')),
     path('TestApp/', include('TestAppModel.urls')),
     path('logs/', include('logmanager.urls')),
+    path('products/', include('products.urls')),
 ]

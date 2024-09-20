@@ -371,3 +371,930 @@ INFO 2024-09-13 18:47:34,098 "GET /static/logmanager/style.css HTTP/1.1" 200 114
 INFO 2024-09-13 18:47:37,579 User 'Anonymous' accessed GET /
 WARNING 2024-09-13 18:47:37,584 Not Found: /
 WARNING 2024-09-13 18:47:37,584 "GET / HTTP/1.1" 404 2633
+INFO 2024-09-19 23:31:33,608 Watching for file changes with StatReloader
+INFO 2024-09-19 23:31:39,386 User 'Anonymous' accessed GET /
+WARNING 2024-09-19 23:31:39,721 Not Found: /
+WARNING 2024-09-19 23:31:39,721 "GET / HTTP/1.1" 404 2742
+INFO 2024-09-19 23:31:39,770 User 'Anonymous' accessed GET /favicon.ico
+WARNING 2024-09-19 23:31:39,776 Not Found: /favicon.ico
+WARNING 2024-09-19 23:31:39,776 "GET /favicon.ico HTTP/1.1" 404 2793
+INFO 2024-09-19 23:31:54,145 User 'Anonymous' accessed GET /add/
+WARNING 2024-09-19 23:31:54,153 Not Found: /add/
+WARNING 2024-09-19 23:31:54,154 "GET /add/ HTTP/1.1" 404 2772
+INFO 2024-09-19 23:32:07,109 User 'Anonymous' accessed GET /products/]add/
+WARNING 2024-09-19 23:32:07,115 Not Found: /products/]add/
+WARNING 2024-09-19 23:32:07,116 "GET /products/]add/ HTTP/1.1" 404 3058
+INFO 2024-09-19 23:32:14,152 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:32:14,408 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:32:14,410 "GET /products/add/ HTTP/1.1" 500 84483
+INFO 2024-09-19 23:46:23,560 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:23,592 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:23,593 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:24,636 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:24,670 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:24,671 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:25,250 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:25,286 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:25,288 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:25,469 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:25,494 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:25,495 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:25,651 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:25,688 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:25,689 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:25,847 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:25,872 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:25,873 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:26,033 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:26,063 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:26,066 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:26,200 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:26,225 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:26,226 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:26,386 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:26,417 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:26,418 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:26,609 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:26,663 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:26,664 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:26,788 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:26,816 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:26,817 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:26,986 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:27,015 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:27,016 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:46:27,207 User 'Anonymous' accessed GET /products/add/
+ERROR 2024-09-19 23:46:27,243 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 14, in add_product
+    return render(request, 'add_product.html')
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_product.html
+ERROR 2024-09-19 23:46:27,244 "GET /products/add/ HTTP/1.1" 500 84620
+INFO 2024-09-19 23:48:04,241 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-19 23:48:04,842 Watching for file changes with StatReloader
+INFO 2024-09-19 23:48:13,353 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-19 23:48:13,466 "GET /products/add/ HTTP/1.1" 200 785
+INFO 2024-09-19 23:48:37,644 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-19 23:48:38,206 Watching for file changes with StatReloader
+INFO 2024-09-19 23:48:57,578 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-19 23:48:57,700 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-19 23:48:57,706 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-19 23:48:57,724 "GET /products/view/ HTTP/1.1" 200 98
+INFO 2024-09-20 01:22:34,437 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:22:35,284 Watching for file changes with StatReloader
+INFO 2024-09-20 01:24:48,536 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\forms.py changed, reloading.
+INFO 2024-09-20 01:24:49,373 Watching for file changes with StatReloader
+INFO 2024-09-20 01:25:09,342 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:25:09,354 "GET /products/add/ HTTP/1.1" 200 738
+INFO 2024-09-20 01:25:15,992 User 'Anonymous' accessed POST /products/add/
+ERROR 2024-09-20 01:25:16,081 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 7, in add_product
+    name = request.POST['name']
+  File "E:\araconda\envs\Django\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'name'
+ERROR 2024-09-20 01:25:16,082 "POST /products/add/ HTTP/1.1" 500 77878
+INFO 2024-09-20 01:25:51,156 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:25:51,156 "GET /products/add/ HTTP/1.1" 200 738
+INFO 2024-09-20 01:28:44,106 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:28:45,082 Watching for file changes with StatReloader
+INFO 2024-09-20 01:28:46,800 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 01:28:47,394 Watching for file changes with StatReloader
+INFO 2024-09-20 01:28:58,607 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 01:28:59,259 Watching for file changes with StatReloader
+INFO 2024-09-20 01:29:59,011 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:29:59,669 Watching for file changes with StatReloader
+INFO 2024-09-20 01:30:10,644 User 'Anonymous' accessed GET /products/choose
+INFO 2024-09-20 01:30:10,658 "GET /products/choose HTTP/1.1" 301 0
+INFO 2024-09-20 01:30:10,667 User 'Anonymous' accessed GET /products/choose/
+INFO 2024-09-20 01:30:10,933 "GET /products/choose/ HTTP/1.1" 200 1689
+INFO 2024-09-20 01:31:03,913 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:31:04,663 Watching for file changes with StatReloader
+INFO 2024-09-20 01:32:04,416 User 'Anonymous' accessed POST /products/choose/
+ERROR 2024-09-20 01:32:04,577 Internal Server Error: /products/choose/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 42, in getthechoice
+    return render(request, 'products/main.html', {'form': form, 'scrape_form': scrape_form})
+UnboundLocalError: local variable 'scrape_form' referenced before assignment
+ERROR 2024-09-20 01:32:04,578 "POST /products/choose/ HTTP/1.1" 500 70447
+INFO 2024-09-20 01:34:17,173 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:34:18,042 Watching for file changes with StatReloader
+INFO 2024-09-20 01:34:24,746 User 'Anonymous' accessed GET /products/choose/
+INFO 2024-09-20 01:34:24,767 "GET /products/choose/ HTTP/1.1" 200 1689
+INFO 2024-09-20 01:34:26,980 User 'Anonymous' accessed POST /products/choose/
+INFO 2024-09-20 01:34:26,998 "POST /products/choose/ HTTP/1.1" 302 0
+INFO 2024-09-20 01:34:27,003 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:34:27,012 "GET /products/view/ HTTP/1.1" 200 184
+INFO 2024-09-20 01:36:34,101 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 01:36:34,722 Watching for file changes with StatReloader
+INFO 2024-09-20 01:36:45,836 User 'Anonymous' accessed POST /products/choose/
+ERROR 2024-09-20 01:36:47,979 Internal Server Error: /products/choose/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\fields\__init__.py", line 1801, in to_python
+    decimal_value = decimal.Decimal(value)
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 31, in getthechoice
+    scrape_product(url)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py", line 16, in scrape_product
+    Product.objects.create(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\fields\__init__.py", line 1820, in get_db_prep_save
+    self.to_python(value), self.max_digits, self.decimal_places
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\fields\__init__.py", line 1803, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“price” value must be a decimal number.']
+ERROR 2024-09-20 01:36:47,984 "POST /products/choose/ HTTP/1.1" 500 148537
+INFO 2024-09-20 01:36:50,293 User 'Anonymous' accessed GET /products/choose/
+INFO 2024-09-20 01:36:50,310 "GET /products/choose/ HTTP/1.1" 200 1689
+INFO 2024-09-20 01:37:19,152 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:37:19,847 Watching for file changes with StatReloader
+INFO 2024-09-20 01:37:23,426 User 'Anonymous' accessed POST /products/choose/
+ERROR 2024-09-20 01:37:25,300 Internal Server Error: /products/choose/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\fields\__init__.py", line 1801, in to_python
+    decimal_value = decimal.Decimal(value)
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 31, in getthechoice
+    scrape_product(url)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py", line 16, in scrape_product
+    Product.objects.create(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\fields\__init__.py", line 1820, in get_db_prep_save
+    self.to_python(value), self.max_digits, self.decimal_places
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\fields\__init__.py", line 1803, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“price” value must be a decimal number.']
+ERROR 2024-09-20 01:37:25,303 "POST /products/choose/ HTTP/1.1" 500 148487
+INFO 2024-09-20 01:37:35,257 User 'Anonymous' accessed GET /products/choose/
+INFO 2024-09-20 01:37:35,274 "GET /products/choose/ HTTP/1.1" 200 1689
+INFO 2024-09-20 01:37:50,107 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 01:37:50,708 Watching for file changes with StatReloader
+INFO 2024-09-20 01:37:53,963 User 'Anonymous' accessed POST /products/choose/
+INFO 2024-09-20 01:37:55,524 "POST /products/choose/ HTTP/1.1" 302 0
+INFO 2024-09-20 01:37:55,528 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:37:55,537 "GET /products/view/ HTTP/1.1" 200 248
+INFO 2024-09-20 01:37:58,056 User 'Anonymous' accessed GET /products/view/url
+WARNING 2024-09-20 01:37:58,067 Not Found: /products/view/url
+WARNING 2024-09-20 01:37:58,068 "GET /products/view/url HTTP/1.1" 404 3251
+INFO 2024-09-20 01:38:27,012 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 01:38:27,623 Watching for file changes with StatReloader
+INFO 2024-09-20 01:38:52,682 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 01:38:53,301 Watching for file changes with StatReloader
+INFO 2024-09-20 01:39:13,280 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 01:39:13,865 Watching for file changes with StatReloader
+INFO 2024-09-20 01:42:05,768 User 'Anonymous' accessed GET /products/choose/
+WARNING 2024-09-20 01:42:05,783 Not Found: /products/choose/
+WARNING 2024-09-20 01:42:05,783 "GET /products/choose/ HTTP/1.1" 404 3065
+INFO 2024-09-20 01:42:06,806 User 'Anonymous' accessed GET /products/choose/
+WARNING 2024-09-20 01:42:06,815 Not Found: /products/choose/
+WARNING 2024-09-20 01:42:06,815 "GET /products/choose/ HTTP/1.1" 404 3065
+INFO 2024-09-20 01:42:16,690 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:42:16,739 "GET /products/add/ HTTP/1.1" 200 2503
+INFO 2024-09-20 01:43:41,737 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:43:41,765 "GET /products/add/ HTTP/1.1" 200 4502
+INFO 2024-09-20 01:45:58,329 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:45:58,353 "GET /products/add/ HTTP/1.1" 200 4514
+INFO 2024-09-20 01:47:01,166 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:47:01,188 "GET /products/add/ HTTP/1.1" 200 4853
+INFO 2024-09-20 01:48:47,861 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:48:47,882 "GET /products/add/ HTTP/1.1" 200 5001
+INFO 2024-09-20 01:50:35,399 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 01:50:35,422 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 01:51:06,821 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 01:51:06,836 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 01:51:06,841 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:51:06,848 "GET /products/view/ HTTP/1.1" 200 332
+INFO 2024-09-20 01:53:02,473 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:53:02,487 "GET /products/view/ HTTP/1.1" 200 461
+INFO 2024-09-20 01:54:10,751 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:54:10,764 "GET /products/view/ HTTP/1.1" 200 3931
+INFO 2024-09-20 01:54:10,775 User 'Anonymous' accessed GET /products/view/url
+WARNING 2024-09-20 01:54:10,784 Not Found: /products/view/url
+WARNING 2024-09-20 01:54:10,785 "GET /products/view/url HTTP/1.1" 404 3068
+INFO 2024-09-20 01:54:55,789 User 'Anonymous' accessed GET /
+WARNING 2024-09-20 01:54:55,796 Not Found: /
+WARNING 2024-09-20 01:54:55,797 "GET / HTTP/1.1" 404 2742
+INFO 2024-09-20 01:55:05,170 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 01:55:05,181 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 01:55:05,186 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:55:05,191 "GET /products/view/ HTTP/1.1" 200 4335
+INFO 2024-09-20 01:55:05,210 User 'Anonymous' accessed GET /products/view/url
+WARNING 2024-09-20 01:55:05,217 Not Found: /products/view/url
+WARNING 2024-09-20 01:55:05,217 "GET /products/view/url HTTP/1.1" 404 3068
+INFO 2024-09-20 01:56:58,360 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 01:56:58,370 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 01:56:58,374 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:56:58,377 "GET /products/view/ HTTP/1.1" 200 4739
+INFO 2024-09-20 01:56:58,400 User 'Anonymous' accessed GET /products/view/url
+WARNING 2024-09-20 01:56:58,407 Not Found: /products/view/url
+WARNING 2024-09-20 01:56:58,407 "GET /products/view/url HTTP/1.1" 404 3068
+INFO 2024-09-20 01:57:53,048 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 01:57:53,062 "GET /products/view/ HTTP/1.1" 200 6253
+INFO 2024-09-20 01:57:53,077 User 'Anonymous' accessed GET /products/view/image_url
+WARNING 2024-09-20 01:57:53,085 Not Found: /products/view/image_url
+WARNING 2024-09-20 01:57:53,085 "GET /products/view/image_url HTTP/1.1" 404 3086
+INFO 2024-09-20 02:01:54,154 User 'Anonymous' accessed GET /products/view/
+ERROR 2024-09-20 02:01:54,324 Internal Server Error: /products/view/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 7, in view_products
+    return render(request, 'products/view_products.html', {'products': products})
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delete_product' not found. 'delete_product' is not a valid view function or pattern name.
+ERROR 2024-09-20 02:01:54,328 "GET /products/view/ HTTP/1.1" 500 134316
+INFO 2024-09-20 02:03:46,410 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 02:03:47,218 Watching for file changes with StatReloader
+INFO 2024-09-20 02:04:08,211 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 02:04:08,799 Watching for file changes with StatReloader
+INFO 2024-09-20 02:04:35,134 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 02:04:35,741 Watching for file changes with StatReloader
+INFO 2024-09-20 02:04:45,681 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 02:04:46,267 Watching for file changes with StatReloader
+INFO 2024-09-20 02:05:38,359 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 02:05:39,165 Watching for file changes with StatReloader
+INFO 2024-09-20 02:06:56,251 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 02:06:56,835 Watching for file changes with StatReloader
+INFO 2024-09-20 02:07:14,554 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 02:07:15,248 Watching for file changes with StatReloader
+INFO 2024-09-20 02:07:40,561 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:07:40,592 "GET /products/view/ HTTP/1.1" 200 8497
+INFO 2024-09-20 02:07:40,623 User 'Anonymous' accessed GET /products/view/image_url
+WARNING 2024-09-20 02:07:40,641 Not Found: /products/view/image_url
+WARNING 2024-09-20 02:07:40,642 "GET /products/view/image_url HTTP/1.1" 404 3482
+INFO 2024-09-20 02:07:43,845 User 'Anonymous' accessed POST /products/delete/3/
+ERROR 2024-09-20 02:07:44,006 Internal Server Error: /products/delete/3/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 41, in delete_product
+    return redirect('home')  # Redirect to the home page or wherever you want
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+ERROR 2024-09-20 02:07:44,011 "POST /products/delete/3/ HTTP/1.1" 500 88286
+INFO 2024-09-20 02:08:00,212 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 02:08:00,835 Watching for file changes with StatReloader
+INFO 2024-09-20 02:08:08,794 User 'Anonymous' accessed POST /products/delete/2/
+INFO 2024-09-20 02:08:08,816 "POST /products/delete/2/ HTTP/1.1" 302 0
+INFO 2024-09-20 02:08:08,822 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:08:08,834 "GET /products/view/ HTTP/1.1" 200 6611
+INFO 2024-09-20 02:08:11,264 User 'Anonymous' accessed POST /products/delete/4/
+INFO 2024-09-20 02:08:11,273 "POST /products/delete/4/ HTTP/1.1" 302 0
+INFO 2024-09-20 02:08:11,278 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:08:11,282 "GET /products/view/ HTTP/1.1" 200 5413
+INFO 2024-09-20 02:08:14,790 User 'Anonymous' accessed POST /products/delete/1/
+INFO 2024-09-20 02:08:14,809 "POST /products/delete/1/ HTTP/1.1" 302 0
+INFO 2024-09-20 02:08:14,812 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:08:14,816 "GET /products/view/ HTTP/1.1" 200 4740
+INFO 2024-09-20 02:09:40,727 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:09:40,742 "GET /products/view/ HTTP/1.1" 200 4775
+INFO 2024-09-20 02:09:45,556 User 'Anonymous' accessed POST /products/delete/5/
+INFO 2024-09-20 02:09:45,576 "POST /products/delete/5/ HTTP/1.1" 302 0
+INFO 2024-09-20 02:09:45,582 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:09:45,586 "GET /products/view/ HTTP/1.1" 200 3636
+INFO 2024-09-20 02:11:21,404 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:11:21,420 "GET /products/view/ HTTP/1.1" 200 3694
+INFO 2024-09-20 02:12:46,736 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:12:46,754 "GET /products/view/ HTTP/1.1" 200 3718
+INFO 2024-09-20 02:13:22,112 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 02:13:22,130 "GET /products/view/ HTTP/1.1" 200 3748
+INFO 2024-09-20 18:54:05,622 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 18:54:05,639 "GET /products/view/ HTTP/1.1" 200 3748
+INFO 2024-09-20 18:54:10,340 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 18:54:10,481 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 18:54:23,634 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 18:54:23,637 "GET /products/view/ HTTP/1.1" 200 3748
+INFO 2024-09-20 19:30:55,905 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:30:59,276 Watching for file changes with StatReloader
+INFO 2024-09-20 19:31:27,876 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:31:28,523 Watching for file changes with StatReloader
+INFO 2024-09-20 19:32:59,787 Watching for file changes with StatReloader
+INFO 2024-09-20 19:33:23,319 Watching for file changes with StatReloader
+INFO 2024-09-20 19:33:31,850 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:33:31,999 "GET /products/view/ HTTP/1.1" 200 3748
+INFO 2024-09-20 19:33:34,786 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 19:33:34,878 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 19:33:46,604 User 'Anonymous' accessed POST /products/add/
+ERROR 2024-09-20 19:34:08,402 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 20, in getthechoice
+    scrape_product(url)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py", line 29, in scrape_product
+    name = soup.find('meta',{'property':"og:title"}).get('content')
+AttributeError: 'NoneType' object has no attribute 'get'
+ERROR 2024-09-20 19:34:08,405 "POST /products/add/ HTTP/1.1" 500 81285
+INFO 2024-09-20 19:34:25,701 User 'Anonymous' accessed POST /products/add/
+ERROR 2024-09-20 19:34:37,141 "POST /products/add/ HTTP/1.1" 500 158655
+INFO 2024-09-20 19:36:51,084 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:36:58,289 Watching for file changes with StatReloader
+INFO 2024-09-20 19:37:17,412 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:37:18,086 Watching for file changes with StatReloader
+INFO 2024-09-20 19:37:42,480 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:37:43,163 Watching for file changes with StatReloader
+INFO 2024-09-20 19:44:29,833 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:44:30,636 Watching for file changes with StatReloader
+INFO 2024-09-20 19:44:59,340 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:45:00,005 Watching for file changes with StatReloader
+INFO 2024-09-20 19:45:07,696 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 19:45:07,723 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 19:45:11,218 User 'Anonymous' accessed POST /products/add/
+ERROR 2024-09-20 19:45:22,683 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: products_product.price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 20, in getthechoice
+    scrape_product(url)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py", line 60, in scrape_product
+    Product.objects.create(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: products_product.price
+ERROR 2024-09-20 19:45:22,686 "POST /products/add/ HTTP/1.1" 500 186731
+INFO 2024-09-20 19:45:43,814 User 'Anonymous' accessed POST /products/add/
+ERROR 2024-09-20 19:45:53,928 Internal Server Error: /products/add/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: products_product.price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 20, in getthechoice
+    scrape_product(url)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py", line 60, in scrape_product
+    Product.objects.create(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\araconda\envs\Django\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: products_product.price
+ERROR 2024-09-20 19:45:53,932 "POST /products/add/ HTTP/1.1" 500 186731
+INFO 2024-09-20 19:45:55,659 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 19:45:55,664 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 19:48:45,400 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:48:50,194 Watching for file changes with StatReloader
+INFO 2024-09-20 19:48:51,934 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 19:49:06,840 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 19:49:06,848 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:49:06,885 "GET /products/view/ HTTP/1.1" 200 4921
+INFO 2024-09-20 19:49:06,908 User 'Anonymous' accessed GET /products/view/['https://dkstatics-public.digikala.com/digikala-products/4120aa64dea09152723bdca9d8cedbcb7717c2a0_1685340674.jpg
+WARNING 2024-09-20 19:49:06,936 Not Found: /products/view/['https://dkstatics-public.digikala.com/digikala-products/4120aa64dea09152723bdca9d8cedbcb7717c2a0_1685340674.jpg
+WARNING 2024-09-20 19:49:06,936 "GET /products/view/['https://dkstatics-public.digikala.com/digikala-products/4120aa64dea09152723bdca9d8cedbcb7717c2a0_1685340674.jpg?x-oss-process=image/resize,h_1600/quality,q_80%27] HTTP/1.1" 404 3862
+INFO 2024-09-20 19:49:54,951 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 19:49:55,644 Watching for file changes with StatReloader
+INFO 2024-09-20 19:50:04,518 User 'Anonymous' accessed POST /products/delete/7/
+INFO 2024-09-20 19:50:04,545 "POST /products/delete/7/ HTTP/1.1" 302 0
+INFO 2024-09-20 19:50:04,549 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:50:04,566 "GET /products/view/ HTTP/1.1" 200 3748
+INFO 2024-09-20 19:50:08,222 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 19:50:08,242 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 19:50:15,674 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 19:50:32,776 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 19:50:32,781 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:50:32,784 "GET /products/view/ HTTP/1.1" 200 4907
+INFO 2024-09-20 19:50:52,261 User 'Anonymous' accessed POST /products/delete/6/
+INFO 2024-09-20 19:50:52,270 "POST /products/delete/6/ HTTP/1.1" 302 0
+INFO 2024-09-20 19:50:52,274 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:50:52,278 "GET /products/view/ HTTP/1.1" 200 4168
+INFO 2024-09-20 19:53:45,675 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 19:53:46,308 Watching for file changes with StatReloader
+INFO 2024-09-20 19:53:48,830 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 19:53:49,415 Watching for file changes with StatReloader
+INFO 2024-09-20 19:54:38,464 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 19:54:39,066 Watching for file changes with StatReloader
+INFO 2024-09-20 19:54:44,241 User 'Anonymous' accessed GET /products/view/
+ERROR 2024-09-20 19:54:44,652 Internal Server Error: /products/view/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 8, in view_products
+    return render(request, 'products/view_products.html', {'products': products})
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'add' not found. 'add' is not a valid view function or pattern name.
+ERROR 2024-09-20 19:54:44,655 "GET /products/view/ HTTP/1.1" 500 122651
+INFO 2024-09-20 19:55:15,572 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:55:15,598 "GET /products/view/ HTTP/1.1" 200 4268
+INFO 2024-09-20 19:55:17,556 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 19:55:17,569 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 19:56:11,862 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:56:11,876 "GET /products/view/ HTTP/1.1" 200 4280
+INFO 2024-09-20 19:57:28,112 User 'Anonymous' accessed GET /products/view/
+ERROR 2024-09-20 19:57:28,168 Internal Server Error: /products/view/
+Traceback (most recent call last):
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py", line 8, in view_products
+    return render(request, 'products/view_products.html', {'products': products})
+  File "E:\araconda\envs\Django\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "E:\araconda\envs\Django\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\araconda\envs\Django\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'new_product' not found. 'new_product' is not a valid view function or pattern name.
+ERROR 2024-09-20 19:57:28,170 "GET /products/view/ HTTP/1.1" 500 122762
+INFO 2024-09-20 19:57:47,440 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:57:47,455 "GET /products/view/ HTTP/1.1" 200 5183
+INFO 2024-09-20 19:58:01,759 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:58:01,768 "GET /products/view/ HTTP/1.1" 200 4276
+INFO 2024-09-20 19:59:15,205 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:59:15,218 "GET /products/view/ HTTP/1.1" 200 4368
+INFO 2024-09-20 19:59:58,242 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 19:59:58,244 "GET /products/view/ HTTP/1.1" 200 4368
+INFO 2024-09-20 20:00:31,189 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:00:31,206 "GET /products/view/ HTTP/1.1" 200 4368
+INFO 2024-09-20 20:00:31,476 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:00:31,480 "GET /products/view/ HTTP/1.1" 200 4368
+INFO 2024-09-20 20:01:17,085 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:01:17,098 "GET /products/view/ HTTP/1.1" 200 4437
+INFO 2024-09-20 20:01:58,773 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:01:58,786 "GET /products/view/ HTTP/1.1" 200 4435
+INFO 2024-09-20 20:02:06,320 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:02:06,333 "GET /products/view/ HTTP/1.1" 200 4442
+INFO 2024-09-20 20:03:11,012 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:03:11,027 "GET /products/view/ HTTP/1.1" 200 4880
+INFO 2024-09-20 20:03:25,189 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:03:25,204 "GET /products/view/ HTTP/1.1" 200 4879
+INFO 2024-09-20 20:04:12,507 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:04:12,524 "GET /products/view/ HTTP/1.1" 200 4883
+INFO 2024-09-20 20:04:13,459 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:04:13,462 "GET /products/view/ HTTP/1.1" 200 4883
+INFO 2024-09-20 20:04:13,821 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:04:13,823 "GET /products/view/ HTTP/1.1" 200 4883
+INFO 2024-09-20 20:04:13,976 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:04:13,980 "GET /products/view/ HTTP/1.1" 200 4883
+INFO 2024-09-20 20:04:36,514 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:04:36,528 "GET /products/view/ HTTP/1.1" 200 4879
+INFO 2024-09-20 20:04:37,478 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:04:37,483 "GET /products/view/ HTTP/1.1" 200 4879
+INFO 2024-09-20 20:05:32,723 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:05:32,740 "GET /products/view/ HTTP/1.1" 200 4848
+INFO 2024-09-20 20:05:50,484 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:05:50,497 "GET /products/view/ HTTP/1.1" 200 4849
+INFO 2024-09-20 20:05:51,124 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:05:51,130 "GET /products/view/ HTTP/1.1" 200 4849
+INFO 2024-09-20 20:05:51,490 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:05:51,493 "GET /products/view/ HTTP/1.1" 200 4849
+INFO 2024-09-20 20:05:51,712 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:05:51,714 "GET /products/view/ HTTP/1.1" 200 4849
+INFO 2024-09-20 20:06:25,843 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:06:25,856 "GET /products/view/ HTTP/1.1" 200 4848
+INFO 2024-09-20 20:06:34,973 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:06:34,985 "GET /products/view/ HTTP/1.1" 200 4848
+INFO 2024-09-20 20:06:42,702 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:06:42,717 "GET /products/view/ HTTP/1.1" 200 4849
+INFO 2024-09-20 20:07:32,866 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:07:32,880 "GET /products/view/ HTTP/1.1" 200 4834
+INFO 2024-09-20 20:07:39,560 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 20:07:39,571 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 20:07:54,449 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 20:08:11,268 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 20:08:11,274 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:08:11,283 "GET /products/view/ HTTP/1.1" 200 6333
+INFO 2024-09-20 20:08:25,317 User 'Anonymous' accessed GET /products/add/
+INFO 2024-09-20 20:08:25,324 "GET /products/add/ HTTP/1.1" 200 5038
+INFO 2024-09-20 20:08:37,570 User 'Anonymous' accessed POST /products/add/
+INFO 2024-09-20 20:08:56,557 "POST /products/add/ HTTP/1.1" 302 0
+INFO 2024-09-20 20:08:56,560 User 'Anonymous' accessed GET /products/view/
+INFO 2024-09-20 20:08:56,565 "GET /products/view/ HTTP/1.1" 200 7738
+INFO 2024-09-20 20:09:25,514 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\models.py changed, reloading.
+INFO 2024-09-20 20:09:26,193 Watching for file changes with StatReloader
+INFO 2024-09-20 20:09:53,866 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\scraper.py changed, reloading.
+INFO 2024-09-20 20:09:54,522 Watching for file changes with StatReloader
+INFO 2024-09-20 20:10:49,008 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\urls.py changed, reloading.
+INFO 2024-09-20 20:10:49,583 Watching for file changes with StatReloader
+INFO 2024-09-20 20:11:21,647 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 20:11:22,244 Watching for file changes with StatReloader
+INFO 2024-09-20 20:16:58,419 C:\Users\POUYA\Desktop\BackBoiler\BackBoiler\src\products\views.py changed, reloading.
+INFO 2024-09-20 20:16:59,015 Watching for file changes with StatReloader

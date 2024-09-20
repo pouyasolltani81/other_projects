@@ -1,0 +1,20 @@
+<h1>Add New Product</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea><br><br>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" step="0.01"><br><br>
+
+    <label for="image_url">Image URL:</label>
+    <input type="text" id="image_url" name="image_url"><br><br>
+
+    <label for="product_url">Product URL:</label>
+    <input type="text" id="product_url" name="product_url"><br><br>
+
+    <input type="submit" value="Add Product">
+</form>

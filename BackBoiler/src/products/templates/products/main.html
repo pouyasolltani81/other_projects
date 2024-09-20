@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 30%, #e2e6ea 100%);
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px; /* Increased max width for better layout */
+            margin: auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.5s ease-in-out;
+            display: flex; /* Flexbox for side-by-side layout */
+            justify-content: space-between; /* Space between forms */
+            gap: 20px; /* Gap between forms */
+            flex-direction : column;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .form-section {
+            flex: 1; /* Allow forms to grow equally */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: calc(100% - 24px); /* Adjusted width for padding */
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            box-shadow: 0 0 5px rgba(52,152,219,1);
+            transform: scale(1.01);
+            outline: none;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(52,152,219,0.4);
+        }
+        button:active {
+            transform: translateY(1px);
+        }
+        @media (max-width: 800px) {
+          .container {
+              flex-direction: column; /* Stack forms on smaller screens */
+          }
+          .form-section {
+              margin-bottom: 20px; /* Space between stacked forms */
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Product</h1>
+
+        <div class="form-section">
+          <h2>Manual Entry</h2>
+          <form method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                  {{ form.as_p }}
+              </div>
+              <button type="submit">Add Product</button>
+          </form>
+        </div>
+
+        <div class="form-section">
+          <h2>Scrape a Product</h2>
+          <form method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                  {{ scrape_form.as_p }}
+              </div>
+              <button type="submit" name="scrape">Scrape Product</button>
+          </form>
+        </div>
+    </div>
+</body>
+</html>

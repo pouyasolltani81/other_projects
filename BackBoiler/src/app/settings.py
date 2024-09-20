@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'TestAppModel',
     'logmanager',
     'sslserver',
+    'products',
 ]
 
 MIDDLEWARE = [

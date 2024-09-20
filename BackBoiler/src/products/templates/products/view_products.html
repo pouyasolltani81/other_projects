@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 30%, #e2e6ea 100%);
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 15px;
+            text-align:center ; 
+        }
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 16px;
+            color: #27ae60; 
+            margin-bottom: 10px;
+        }
+        .view-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out; 
+            width: 80%;
+        }
+        .view-link:hover {
+            background-color: #2980b9; 
+            transform: translateY(-2px); 
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #e74c3c; 
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out; 
+            margin-top: 15px;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #c0392b; 
+            transform: translateY(-2px); 
+        }
+        .btn:active {
+            transform: translateY(1px); 
+        }
+
+        .btn2 {
+           display: inline-block;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: green; 
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease-in-out; 
+            width: 80%;
+        }
+        .btn2:hover {
+            background-color: green; 
+            transform: translateY(-2px); 
+        }
+        .btn2:active {
+            transform: translateY(1px); 
+        }
+    </style>
+</head>
+<body>
+
+<h1>All Products</h1>
+<div class="product-container">
+    {% for product in products %}
+      <div class="product-card">
+          <img src="{{ product.image_url }}" alt="{{ product.name }}" class="product-image">
+          <div class="product-info">
+              <div class="product-name">{{ product.name }}</div>
+              <div class="product-price">${{ product.price }}</div>
+              <a href="{{ product.product_url }}" class="view-link">View</a>
+              <form method="post" action="{% url 'delete_product' product.id %}">
+                  {% csrf_token %}
+                  <button type="submit" class="btn">Delete</button>
+              </form>
+          </div>
+      </div>
+    {% endfor %}
+</div>
+
+<div  style="text-align: center; margin-top: 20px;">
+    <a href="{% url 'get_the_choice' %}" class=" btn2 btn-primary">Add More</a>
+</div>
+
+
+<form method="post" action="{% url 'delete_all_products' %}" style="text-align:center; margin-top:20px;">
+    {% csrf_token %}
+    <button type="submit" class="btn">Delete All Products</button>
+</form>
+
+</body>
+</html>
