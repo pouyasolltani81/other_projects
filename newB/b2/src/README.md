@@ -4,9 +4,9 @@ in this project i have added a service for scrapping products
 
 ## Features
 
-- Feature 1: scrapping a product
-- Feature 2: deleting a product
-- Feature 3: viewing the scrapped products
+-  scrapping a product
+-  deleting a product
+-  viewing the scrapped products
 
 ## Technologies Used
 
